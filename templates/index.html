@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+<form method="post">
+    <label id="size">Digite o tamanho: da senha</label>
+
+    <input type="number" name="size" id="size" maxlength=12 value=12 minlength=12 />
+
+    <button type="submit">Clique para gerar uma senha</button>
+
+
+
+
+</form>
+{% if show_password == True %}
+    <p>{{ senha }}</p>
+    {% endif %}
+
+
+</body>
+</html>
